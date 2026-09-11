@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Vectra3D · Graduation workspace</title><link rel="stylesheet" href="style.css"><script src="seed.js" defer></script><script src="app.js" defer></script></head>
+<body>
+<a class="skip" href="#main">Skip to workspace</a>
+<aside class="sidebar">
+  <a class="brand" href="#overview"><svg viewBox="0 0 36 36" width="34" height="34" aria-hidden="true"><path d="M4 7h8l6 16 6-16h8L18 33z" fill="currentColor"/><path d="M14 4h8l-4 10z" fill="#83d8c5"/></svg><span>Vectra3D<small>Graduation workspace</small></span></a>
+  <nav aria-label="Workspace"><a href="#overview">This week</a><a href="#tasks">Tasks</a><a href="#timeline">19-week plan</a><a href="#deliverables">Deliverables</a><a href="#research">Research planning</a><a href="#logs">Hours & supervision</a><a href="#risks">Gates & risks</a><a href="#review">Weekly review</a><a href="#library">Files & guidance</a></nav>
+  <div class="sidebar-bottom"><strong>Max Klok</strong><span>IDE · Entrepreneurial track</span><span>31 Aug 2026 – 29 Jan 2027</span><p>Internal planning only.<br>Keep raw research outside this tool.</p></div>
+</aside>
+<div class="shell"><header class="topbar"><span>THE HAGUE UNIVERSITY OF APPLIED SCIENCES</span><div><span id="save-state" role="status">Ready</span><button id="backup" class="primary">Export backup</button></div></header><section id="storage-warning" class="attention storage-banner" role="alert" hidden><span></span> <button id="export-unsaved">Export these edits</button></section><main id="main" tabindex="-1"></main><footer>Local browser storage · Export regularly · Source dates may need confirmation</footer></div>
+<div id="notice" role="status" aria-live="polite"></div>
+<input type="file" id="restore-file" accept="application/json,.json" hidden>
+<dialog id="restore-dialog" aria-labelledby="restore-title"><h2 id="restore-title">Restore this backup?</h2><p>It will replace the current dashboard entries. Export your current work first if you need to keep it. A valid saved copy is also kept in this browser before replacement.</p><p id="restore-summary"></p><div class="actions"><button id="cancel-restore">Cancel</button><button id="confirm-restore" class="primary">Replace with backup</button></div></dialog>
+</body></html>

@@ -1,0 +1,15 @@
+# Real credentials — never commit. See Publish_vectra3d.nl/private/auth.example.php
+# for the template, and README_DEPLOY.md for how to generate your own.
+Publish_vectra3d.nl/private/auth.php
+Publish_vectra3d.nl/private/.throttle
+
+# Source PDFs (signed agreement + proposal, names and signatures inside) — held
+# out pending an explicit answer on whether they belong in this repo. Once
+# decided, either remove these two lines or leave them and distribute the PDFs
+# outside git.
+Dashboard/sources/
+Publish_vectra3d.nl/private/app/sources/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

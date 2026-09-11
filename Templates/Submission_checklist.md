@@ -1,0 +1,14 @@
+# Submission checklist
+- [ ] Actual deadline verified against official calendar
+- [ ] All 12 proposal deliverables reviewed and linked
+- [ ] Research article and design brief final
+- [ ] Design report includes both test rounds, evidence and limitations
+- [ ] Reflection and presentation ready
+- [ ] Business plan includes general aspects, marketing and five-year case
+- [ ] Webpage checked on desktop/mobile, keyboard, headings and image descriptions
+- [ ] Approved anonymised material only; publication review logged
+- [ ] Report delivered to company and THUAS supervisor
+- [ ] Exact assessment date recorded for seven-year report availability
+- [ ] Raw-data deletion/longer-consent retention handled separately
+- [ ] Expenses submitted within two weeks of project end
+- [ ] Dashboard exported and final files archived

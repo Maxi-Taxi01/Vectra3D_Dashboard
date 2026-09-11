@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-09T13:34:32.3971774Z",
+  "title": "Design System: Vectra3D Graduation Workspace",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "Teal action"
+      },
+      "nav": {
+        "role": "neutral",
+        "displayName": "Deep blue navigation"
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "Cool light background"
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White surface"
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Page heading",
+        "purpose": "Main route title; 27px on mobile."
+      },
+      "title": {
+        "displayName": "Section heading",
+        "purpose": "Panel titles; selected headings reduce to 18px on mobile."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraphs and inherited native control text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "notification",
+        "value": "0 5px 20px #15394926",
+        "purpose": "Fixed status notice only."
+      }
+    ],
+    "motion": [],
+    "breakpoints": [
+      {
+        "name": "mobile-max",
+        "value": "720px"
+      },
+      {
+        "name": "compact-max",
+        "value": "1150px"
+      },
+      {
+        "name": "wide-min",
+        "value": "1600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Teal action with native keyboard interaction.",
+      "html": "<button class=\"ds-primary\">Export backup</button>",
+      "css": ".ds-primary{font:600 15px/1.5 'Segoe UI',Arial,sans-serif;background:var(--accent,#096c60);color:white;border:1px solid var(--accent,#096c60);border-radius:5px;padding:9px 14px;cursor:pointer}.ds-primary:hover{background:#07554b}.ds-primary:focus-visible{outline:3px solid #c57c0a;outline-offset:3px}.ds-primary:disabled{opacity:.6;cursor:not-allowed}"
+    },
+    {
+      "name": "Evidence field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Visible label above a file-reference input.",
+      "html": "<label class=\"ds-label\">Evidence file reference<input class=\"ds-field\" placeholder=\"File name, version and review reference\"></label>",
+      "css": ".ds-label{display:block;font:600 14px/1.5 'Segoe UI',Arial,sans-serif;color:var(--ink,#172f40)}.ds-field{display:block;width:100%;margin-top:6px;font:400 15px/1.5 'Segoe UI',Arial,sans-serif;color:var(--ink,#172f40);border:1px solid #9eb2bd;border-radius:4px;background:#fff;padding:9px 10px;max-width:100%;caret-color:var(--accent,#096c60)}.ds-field::placeholder{color:#60727d}.ds-field:focus-visible{outline:3px solid #c57c0a;outline-offset:3px}"
+    },
+    {
+      "name": "Selected navigation",
+      "kind": "nav",
+      "refersTo": "nav-selected",
+      "description": "Current route on the dark navigation surface.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Workspace preview\"><a href=\"#overview\" aria-current=\"page\">This week</a><a href=\"#tasks\">Tasks</a></nav>",
+      "css": ".ds-nav{display:flex;flex-direction:column;gap:5px;background:var(--nav,#163747);padding:20px;font:400 14px/1.5 'Segoe UI',Arial,sans-serif}.ds-nav a{color:#d4e3e9;text-decoration:none;padding:10px 13px;border-radius:5px}.ds-nav a:hover{background:#224857}.ds-nav a[aria-current]{background:#e6f4ef;color:#16483f;font-weight:650}.ds-nav a:focus-visible{outline:3px solid #c57c0a;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "overview": "The implementation uses deep blue navigation, a cool light background, white content surfaces, teal actions and fine separating borders. Lists, tables and editable fields provide most of the interface. This is a descriptive extraction of the internal Operate dashboard, with no inferred creative metaphor or user preference.",
+    "keyCharacteristics": [
+      "System fonts",
+      "Bordered white surfaces",
+      "Teal actions",
+      "Native labelled controls",
+      "Responsive navigation and stacked mobile content"
+    ],
+    "rules": [],
+    "dos": [
+      "Do retain visible labels, keyboard focus and status wording.",
+      "Do preserve mobile stacking and contained table overflow."
+    ],
+    "donts": [
+      "Don't communicate task completion only through colour.",
+      "Don't treat the internal dashboard as an approved identity for the separate public webpage."
+    ]
+  }
+}

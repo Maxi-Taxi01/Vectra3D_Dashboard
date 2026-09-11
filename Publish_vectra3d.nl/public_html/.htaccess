@@ -1,0 +1,39 @@
+# Vectra3D graduation dashboard — Apache configuration
+# Everything reachable over HTTP goes through gate.php. The dashboard files
+# themselves live in ../private/app, which has no URL.
+
+Options -Indexes -MultiViews
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # 1. Force HTTPS. Basic credentials over plain HTTP are readable in transit.
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # 2. Real files in public_html (gate.php itself) are served directly.
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ - [L]
+
+    # 3. Everything else is handled by the gate.
+    RewriteRule ^ gate.php [L,QSA]
+</IfModule>
+
+# Never serve dotfiles, even if one is created here by accident.
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Keep the workspace out of search engines regardless of what a page declares.
+<IfModule mod_headers.c>
+    Header set X-Robots-Tag "noindex, nofollow, noarchive"
+</IfModule>
+
+<IfModule mod_php.c>
+    php_flag display_errors Off
+    php_flag session.use_strict_mode On
+</IfModule>
+
+ErrorDocument 403 "Not available."
+ErrorDocument 404 "Not found."

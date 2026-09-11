@@ -1,0 +1,2 @@
+# Student-authored research only
+This folder is an organisational placeholder, not an access-control system. Do not place raw confidential research here until you have confirmed the approved local access-controlled storage with your tutor/company. Keep names, consent forms, recordings, transcripts, drawing sets and raw session outputs out of the dashboard and AI tools. Store only approved, pseudonymised report artifacts here when appropriate. The student carries out research, coding, synthesis and design.
